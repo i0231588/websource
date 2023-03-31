@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        폼 태그
+        form : 사용자가 뭔가를 입력하는 형태로 만들어진 모든 것
+            method : 폼 안의 데이터들을 감싸서 보낼것인가? 아니면 보여주면서 보낼것인가
+
+            action : 폼 안의 데이터를 전송할 주소
+                    : 백엔드 프로그램이 들어올 부분
+    -->
+    <form method="get" action="link2.html">
+      <p>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>
+        <label for="age">나이</label>
+        <input type="text" name="age" id="age" />
+      </p>
+      <p>
+        <label for="tel">전화번호</label>
+        <input type="text" name="tel" id=" tel" />
+      </p>
+      <p>
+        <input type="submit" value="전송" />
+      </p>
+    </form>
+  </body>
+</html>
