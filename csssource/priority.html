@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ecosystem {
+        color: red;
+      }
+      .tiger {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        스타일 상속 : 자식 요소에서 별도로 스타일을 지정하지 않는 경우 부모의 스타일 속성이 전달
+        우선순위
+        1. !important
+        2. 인라인 선언
+        3. 아이디 선택자
+        4. 클래스 선택자
+        5. 태그 선택자
+        6. 전체 선택자
+        7. 속성
+    -->
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        recusandae voluptatem aspernatur non, architecto magnam! Quidem
+        praesentium similique quae consectetur ut. Esse quis explicabo veniam
+        placeat repellendus sapiente iure nobis.
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        recusandae voluptatem aspernatur non, architecto magnam! Quidem
+        praesentium similique quae consectetur ut. Esse quis explicabo veniam
+        placeat repellendus sapiente iure nobis.
+      </p>
+    </div>
+  </body>
+</html>
