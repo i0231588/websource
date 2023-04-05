@@ -11,7 +11,8 @@
       }
       .box {
         background-color: white;
-        height: 50px;
+        /* height: 50px;
+        overflow: hidden;*/
         overflow: hidden;
       }
       .left {
@@ -20,12 +21,25 @@
       .right {
         float: right;
       }
+      .clearfix {
+        clear: both;
+      }
     </style>
   </head>
   <body>
+    <!--
+      float 속성 해제 => clear:both;
+                         overflow: hidden;
+    -->
     <div class="box">
       <img src="left-arrow.png" alt="왼쪽 화살표" class="left" />
       <img src="right-arrow.png" alt="오른쪽 화살표" class="right" />
+      <div class="clearfix">Awesome</div>
     </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vero
+      neque incidunt eligendi nisi delectus harum. Excepturi est natus
+      repellendus ad esse, eos quibusdam sint, perferendis qui beatae sit ipsam.
+    </p>
   </body>
 </html>
