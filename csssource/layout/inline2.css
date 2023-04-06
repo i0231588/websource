@@ -5,13 +5,11 @@ body {
   width: 500px;
   margin: 0 auto;
   background: white;
-  font-size: 0;
 }
 .grid-item {
   width: 100px;
   height: 100px;
-  display: inline-block;
-  vertical-align: top;
+  float: left;
 }
 .grid-item.a {
   background: orange;
@@ -21,4 +19,9 @@ body {
 }
 .grid-item.c {
   background: red;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
